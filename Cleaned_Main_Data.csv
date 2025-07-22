@@ -1,0 +1,171 @@
+VlsHeader,PinNo,PinName,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Function,ToolVersion,Unnamed: 11,LoadName,L,Rv,Rp,RefPinNo,RefPinName,DiagPinNo,Unnamed: 20,Unnamed: 21,Unnamed: 22,Unnamed: 23,Unnamed: 24,Unnamed: 25,Unnamed: 26,Unnamed: 27,Unnamed: 28,Unnamed: 29,Unnamed: 30,Unnamed: 31,Unnamed: 32,Unnamed: 33,Unnamed: 35,Unnamed: 36,Unnamed: 37,Unnamed: 38,SignalConversion,Unnamed: 40,LoadProfile,Unnamed: 42,Unnamed: 43,Unnamed: 44,Unnamed: 45,Unnamed: 46,LoadProfile.1,Unnamed: 48,Unnamed: 49,Unnamed: 50,Unnamed: 51,Unnamed: 52,LoadProfile.2,Unnamed: 54,Unnamed: 55,Unnamed: 56,Unnamed: 57,Unnamed: 58,LoadProfile.3,Unnamed: 60,Unnamed: 61,Unnamed: 62,Unnamed: 63,Unnamed: 64,Unnamed: 65,Unnamed: 66,Unnamed: 67
+LoadProfileColumns,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Frequency,TV,Level,DiagValue,DiagRange,DiagLevel,Frequency,TV,Level,DiagValue,DiagRange,DiagLevel,Frequency,TV,Level,DiagValue,DiagRange,DiagLevel,Frequency,TV,Level,DiagValue,DiagRange,DiagLevel,,,
+HeaderRow,VALT,UBATT =,14,V,,,13.5V,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,LoadProfile,,,,,,LoadProfile,,,,,,LoadProfile,,,,,,LoadProfile,,,,,,,,Remarks
+LoadProfileNames,Project Name:MG1CA770,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Idle,,,,,,PartLoad,,,,,,Max Load,,,,,,Peak Load,,,,,,,,
+HeaderRow,V1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,800,,,,,,6000,,,,,,9000,,,,,,15000,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,<optional (Vienna): duration in cycle>,,,,,,<optional (Vienna): duration in cycle>,,,,,,<optional (Vienna): duration in cycle>,,,,,,<optional (Vienna): duration in cycle>,,,,,,Check SW,,
+HeaderRow,EcuPin,,,,,,,,,Load,,,,,,,EMV,,,,,,,,,,,,,,,,,,,,Output Signal,,,Input Signal,,,Output Signal,,,Input Signal,,,Output Signal,,,Input Signal,,,Output Signal,,,Input Signal,,,Signalzustand,Diagnose,
+TableHeader,PinNo,PinName,"ASIC
+(optional)","OUT
+(optional)","Port
+(optional)","Pin
+(optional)",Function,Pin class,Net,LoadName,L [mH],Rv [Ohm],Rp [Ohm],"Reference 
+PinNo",Reference PinName,"Diagnosis-
+Pin",Variant,ModuleName,HartingNo,ModuleType,ModulePin,Other Pins,GND-Ref,GND-Ref Pinnumber,Supply-Ref,Supply-Ref Pinnumber,Values,Bundled,Shields,Additional Information,"max. current Imax
+(--> Isat of Inductance)
+[A]","Wire type 
+[mm2]",Wire twisted with… [pin number],comment,"Signal-
+Conversion-
+Factor",special SW requirements,f [Hz],TV [%],"Static 
+Level","Diag.
+Value
+(expected O.K. value) [V]","Diag.
+Range [V]","Diag.
+Level
+(expected O.K. state)",f [Hz],TV [%],"Static 
+Level","Diag.
+Value
+(expected O.K. value) [V]","Diag.
+Range [V]","Diag.
+Level
+(expected O.K. state)",f [Hz],TV [%],"Static 
+Level","Diag.
+Value
+(expected O.K. value) [V]","Diag.
+Range [V]","Diag.
+Level
+(expected O.K. state)",f [Hz],TV [%],"Static 
+Level","Diag.
+Value
+(expected O.K. value) [V]","Diag.
+Range [V]","Diag.
+Level
+(expected O.K. state)",,,
+TableRow,249,V_V_BAT_R2,,,,,Switched Battery 1,PowerSupply,,"I_S_BRKSW4,I_S_CONV
+I_S_BRKSW, I_S_T50,  I_S_BRKRSW",,,,,,,,,,,,,,,,,,,,,,1.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,250,V_V_BAT_R3,,,,,Switched Battery 2,PowerSupply,,,,,,,,,,,,,,,,,,,,,,,,1.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,156,V_V_BAT_R1,,,,,Switched Battery 3,SensorSupply,,,,,,,,,,,,,,,,,,,,,,,,1.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,147,V_V_PERMBAT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,105,V_V_BPS,,,,,V_V_VS1,SensorSupply,,"I_A_KS1A,I_A_KS2A",,33,,238,G_R_LSF2,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,223,O_V_5V_APP1,,,,,V_V_PPS1,SensorSupply,,APP1,,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,210,O_V_TPS1,,,,,V_V_TPS,SensorSupply,,TPS,,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,102,O_V_5V_G2,O_V_5V_G2/ O_V_5V_SENT,,,,O_V_5V_G2,SensorSupply,,CAM sensor supply ,,33,,127 116,G_R_RES,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,211,O_V_5VAPP2,V_V_PPS2,,,,V_V_PPS2,SensorSupply,,APP2,,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,101,O_V_5VIMPS,V_V_MAP,,,,V_V_MAP,SensorSupply,,MAP,,100,,128,G_R_RES,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,113,O_V_5V_G3,V_V_VS3,,,,V_V_VS3,SensorSupply,,Lean Angle sensor,,220,,Virtual Pin,"O_V_2,5V_Analog_Source",,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Both Pull Up and Pull down resistor value =220Ohms to generate 2.5V
+,126,O_V_5V_Res01,,,,,O_V_5V_Res01,Sensor Supply,,Not used ,,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,virtual Pin,"O_V_2,5V_Analog_Source",,,,,"2,5V Spannungspegel für hochomige  Eingänge",Virtual Pin,,Pin 113 (O_V_VS3) is used as virtual pin,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,247,I_A_APP2,,,,,Acc pedal sensor 2,AnalogInput,PD(10k),Resistive,,10000,,211,O_V_5V_APP2,,,,,,,,,,,,,,,,,0.8,,,,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+TableRow,104,I_A_QSS1,,,,,Quickshift1,AnalogInput,,Resistive,,4640,,128,G_R_RES03,,,,,,,,,,,,,,,,,0.8,,,,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+TableRow,248,I_A_APP1,,,,,Acc pedal sensor 1,AnalogInput,PD(10k),Resistive,,10000,,223,O_V_5V_APP1,,,,,,,,,,,,,,,,,0.8,,,,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+TableRow,235,I_A_TPS1,,,,,TPS1A TPS1,AnalogInput,PU(215k),Virtual pin,,,,Virtual Pin,"O_V_2,5V_Analog_Source",,,,,,,,,,,,,,,,,0.8,,,,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+TableRow,114,I_A_TPS3,,,,,TPS2A,AnalogInput,,Virtual pin,,,,Virtual Pin,"O_V_2,5V_Analog_Source",,,,,,,,,,,,,,,,,0.8,,,,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+TableRow,115,I_A_TPS4,,,,,TPS2B,AnalogInput,,Virtual pin,,,,Virtual Pin,"O_V_2,5V_Analog_Source",,,,,,,,,,,,,,,,,0.8,,,,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+TableRow,140,I_A_GPS1,,,,,Gear Position Sensor1,AnalogInput,,Resistive,,3160,,135,G_R_RES04,,,,,,,,,,,,,,,,,0.8,,,,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+TableRow,217,I_A_TPS2,,,,,TPS1B TPS2,AnalogInput,PD(215k),Virtual pin,,,,Virtual Pin,"O_V_2,5V_Analog_Source",,,,,,,,,,,,,,,,,0.8,,,,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+TableRow,142,I_A_ENGTS/I_A_CTS,,,,,Engine temperature sensor / Coolant temperature sensor,AnalogInput,PU(2.15k),Resistive,,2150,,116,G_R_RES,,,,,,,,,,,,,,,,,0.8,,,,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+,246,I_A_SSW1,,,,,Side stand switch1,AnalogInput,,Resistive,,3160,,135,G_R_RES04,,,,,,,,,,,,,,,,,0.8,,,,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+TableRow,138,I_A_KS1A,,,,,Knock Sensor 1  Positive,AnalogInput,,Resistive,,47000,,105 113,V_V_VS1 O_V_5V_G3,,,,,,,,,,,,,,,,,0.8,139,,,,,,,4.54,0.3,,,,,4.54,0.3,,,,,4.54,0.3,,,,,4.54,0.3,,,,
+TableRow,139,I_A_KS1B,,,,,Knock Sensor 1  Negative,AnalogInput,,Resistive,,47000,,127 116,G_R_RES,,,,,,,,,,,,,,,,,0.8,138,,,,,,,0.45,0.3,,,,,0.45,0.3,,,,,0.45,0.3,,,,,0.45,0.3,,,,
+TableRow,203,I_A_KS2A,,,,,Knock Sensor 2  Positive,AnalogInput,,Resistive,,47000,,105 113,V_V_VS1 O_V_5V_G3,,,,,,,,,,,,,,,,,0.8,204,,,,,,,4.54,0.3,,,,,4.54,0.3,,,,,4.54,0.3,,,,,4.54,0.3,,,,
+TableRow,204,I_A_KS2B,,,,,Knock Sensor 2  Negative,AnalogInput,,Resistive,,47000,,127 116,G_R_RES,,,,,,,,,,,,,,,,,0.8,203,,,,,,,0.45,0.3,,,,,0.45,0.3,,,,,0.45,0.3,,,,,0.45,0.3,,,,
+,221,I_A_LSF1,,,,,Lambda Sensor 1,AnalogInput,,LSF X4 LSF X6,,,,,,,,,,,,,,,,,,,,,,0.8,,,,Analog value read internally,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,236,I_A_LSF2,,,,,Reserved Lambda Sensor 2,AnalogInput,,LSF X4 LSF X6,,,,,,,,,,,,,,,,,,,,,,0.8,,,,Analog value read internally,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,227,I_A_LSCA 2 I_A_LSF3,,,,,Pumping current Reserved Lambda Sensor 3,AnalogInput,,"LSU5.2 OSIC  MES, LSF3 LSF X6",,,,,,,,,,,,,,,,,,,,,,0.8,,,,Analog value read internally,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,245,I_A_LSVN2 I_A_LSF4,,,,,Trim Resistor Reserved Lambda Sensor 4,AnalogInput,,"LSU5.2 OSIC RE, LSF4 LSF X6",,,,,,,,,,,,,,,,,,,,,,0.8,,,,Analog value read internally,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,117,I_A_LSCA1,,,,,Pumping current ,AnalogInput,,LSU5.2 OSIC  MES,,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,132,I_A_LSCP1,,,,,Messe ,AnalogInput,,LSU5.2 OSIC APE,,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,134,I_A_LSVN1,,,,,Trim Resistor,AnalogInput,,LSU5.2 OSIC  RE,,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,133,O_R_LSVG1,,,,,Nernst voltage,AnalogInput,,LSU5.2 OSIC  IPE,,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,232,I_T_CAMIN1 I_A_GVTS,,,,,CAM Phase Sensor Intake 1 Input Gravity sensor/ Lean Angle Input,"Frequency Input
+Analog Input",PD(511k),Virtual pin,,,,Virtual Pin,"O_V_2,5V_Analog_Source",,,,,,,,,,,,,,,,,0.8,,"Since freq and DC coulmn not available in Input signals so,the load profile is updated in Output Column",,,1000,50,,2.5,0.3,,1000,50,,2.5,0.3,,1000,50,,2.5,0.3,,1000,50,,2.5,0.3,,,,
+TableRow,229,I_A_IMPS1,,,,,MAP1,AnalogInput,PU(422k),Virtual pin,,,,Virtual Pin,"O_V_2,5V_Analog_Source",,,,,,,,,,,,,,,,,0.8,,,,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+,106,I_A_OLS,,,,,Oil temp sensor,AnalogInput,,Resistive,,5620,,116,G_R_RES01,,,,,,,,,,,,,,,,,0.8,,,,Configure S4600(L9966CB) chip ECU pin 106  for Rpu 5.62k @5V to read  2.5V,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+,141,I_A_GPS2,,,,,Gear Position Sensor2,AnalogInput,,Resistive,,5620,,128,G_R_RES03,,,,,,,,,,,,,,,,,0.8,,,,Configure S4600(L9966CB) chip ECU pin 141 for Rpu 5.62k @5V to read  2.5V,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+,123,I_A_CTS,,,,,Coolant  Temp Sensor,AnalogInput,,Resistive,,5620,,128,G_R_RES03,,,,,,,,,,,,,,,,,0.8,,,,Configure S4600(L9966CB) chip ECU pin 123  for Rpu 5.62k @5V to read  2.5V,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+,108,I_A_MAT,,,,,MAT1,AnalogInput,,Resistive,,5620,,135 116,G_R_RES,,,,,,,,,,,,,,,,,0.8,,,,Configure S4600(L9966CB) chip ECU pin 108  for Rpu 5.62k @5V to read  2.5V,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+TableRow,205,I_T_CAMIN2 I_T_CAM,,,,,CAM Phase Sensor Intake 2  Input CAM Position Sensor,"Frequency Input
+",PU(3.16k),"Function Generator:0V-5V: Feed the frequency input, Refer A0 Column",,,,110 220,O_S_RLY6 O_T_CPURGEV,,,,,,,,,,,,,,,,,0.8,,"Since freq and DC coulmn not available in Input signals so,the load profile is updated in Output Column",,,1000,50,,,,,1000,50,,,,,1000,50,,,,,1000,50,,,,,,,
+TableRow,103,I_T_CAMEX2,,,,,CAM Phase Sensor Exhaust 2 Input,Frequency Input,,"Function Generator:0V-5V: Feed the frequency input, Refer A0 Column",,,,110,O_S_RLY6,,,,,,,,,,,,,,,,,0.8,,"Since freq and DC coulmn not available in Input signals so,the load profile is updated in Output Column",,,1000,50,,,,,1000,50,,,,,1000,50,,,,,1000,50,,,,,,,
+TableRow,241,I_T_CAMEX1 I_F_VSS,,,,,CAM Phase Sensor Exhaust 1 Input Reserved for vehicle speed sensor,Frequency Input,PU(3.16k),"Function Generator:0V-5V: Feed the frequency input, Refer A0 Column",,,,110 220,O_S_RLY6 O_T_CPURGEV,,,,,,,,,,,,,,,,,0.8,,"Since freq and DC coulmn not available in Input signals so,the load profile is updated in Output Column",,,1000,50,,,,,1000,50,,,,,1000,50,,,,,1000,50,,,,,,,
+TableRow,131,I_T_VSS I_S_BRKSW,,,,,Vehicle Speed Input Brake switch,"Frequency Input
+Digital Input",PD(2.15k),"Function Generator:0V-5V: Feed the frequency input, Refer A0 Column Mode selection SW3:Switch to UBAT",,,,112 249,O_S_RLY5 V_V_BAT_R2,,,,,,,,,,,,,,,,,0.8,,"Since freq and DC coulmn not available in Input signals so,the load profile is updated in Output Column",,,10000,40,,,,high,10000,40,,,,high,10000,40,,,,high,10000,30,,,,high,,,
+TableRow,233,I_S_T50,,,,,Starter input (20 mA wetting current),DigitalInput,"PD(490E)
+1.47k||1.47k||1.47k",Switch to UBAT,,,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,high,,,,,,high,,,,,,high,,,,,,high,,,
+,130,I_A_IMPS2,,,,,MAP2,AnalogInput,,Virtual pin,,,,Virtual Pin,"O_V_2,5V_Analog_Source",,,,,,,,,,,,,,,,,0.8,,,,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,,2.5,0.3,,,,
+,244,I_S_T15,,,,,Ignition Switch,Digital Input,,,,,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,126,I_S_WAK,O_V_5V_Res01,,,,External WAKE Input,Digital Input,,,,,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,118,I_T_SSW2,,,,,Side stand sw2,PWM input,,"Function Generator:0V-5V: Feed the frequency input, Refer A0 Column",,,,110,O_S_RLY6,,,,,,,,,,,,,,,,,0.8,,,,,1000,50,,,,,1000,50,,,,,1000,50,,,,,1000,50,,,,,,,
+,119,I_T_QSS2,,,,,Quickshift 2,PWM input,,"Function Generator:0V-5V: Feed the frequency input, Refer A0 Column",,,,110,O_S_RLY6,,,,,,,,,,,,,,,,,0.8,,,,,1000,50,,,,,1000,50,,,,,1000,50,,,,,1000,50,,,,,,,
+,120,I_D_SENT1,,,,,SENT 1 ,SENT,,"Function Generator:0V-5V: Feed the frequency input, Refer A0 Column",,,,,,,,,,,,,,,,,,,,,,0.8,,"Since freq and DC coulmn not available in Input signals so,the load profile is updated in Output Column",,Configure S4600(L9966CB) chip ECU pin 120  for SENT input,33000,50,,,,,33000,50,,,,,33000,50,,,,,33000,50,,,,,,,
+,121,I_D_SENT2,,,,,SENT 2 ,SENT,,"Function Generator:0V-5V: Feed the frequency input, Refer A0 Column",,,,,,,,,,,,,,,,,,,,,,0.8,,"Since freq and DC coulmn not available in Input signals so,the load profile is updated in Output Column",,Configure S4600(L9966CB) chip ECU pin 121  for SENT input,33000,50,,,,,33000,50,,,,,33000,50,,,,,33000,50,,,,,,,
+,107,I_S_RES03,,,,,Reserved Multi purpose pins,Digital Input,,Mode Selection SW1; Switch to GND,,,,254,G_G_BAT2,,,,,,,,,,,,,,,,,0.8,,,,Configure S4600(L9966CB) chip ECU pin 107 for switch to GND operation with Pull up current of 10mA,,,low,,,,,,low,,,,,,low,,,,,,low,,,,,,
+,218,O_T_RES01,,,,,20mA LED load,Output Load,,Resistive,,675,,153,G_R_RES05,,,,,,,,,,,,,,,,,0.8,,,,Configure S4600(L9966CB) chip ECU pin 218 for resistive load  to GND  with Pull up current of 20mA,,,high,,,,,,high,,,,,,,,,high,,,,,,high,,,
+,109,I_S_RES01 I_S_OPS,,,,,Reserved Multi purpose pins Oil pressure switch,Digital Input,,Mode Selection SW2; Switch to GND,,,,254 251,G_G_BAT2 G_G_BAT1,,,,,,,,,,,,,,,,,0.8,,,,Configure S4600(L9966CB) chip ECU pin 109 for switch to GND operation with Pull up current of 10mA 20mA,,,low,,,,,,low,,,,,,,,,low,,,,,,low,,,
+,122,I_S_RES02,,,,,Reserved Multi purpose pins,Digital Input,,Mode Selection SW3; Switch to GND,,,,153,G_G_BAT3,,,,,,,,,,,,,,,,,0.8,,,,Configure S4600(L9966CB) chip ECU pin 122 for switch to GND operation with Pull up current of 10mA,,,low,,,,,,low,,,,,,,,,low,,,,,,low,,,
+,129,I_S_BRKSW4,,,,,"Brake switch 4
+(SW to GND wetting current 20 mA)",Digital Input,,Switch to GND,,,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,,0.8,,,,Configure S4600(L9966CB) chip ECU pin 129 for switch to GND operation with Pull up current of 10mA (In SW it is configued as switch to UBAT),,,high,,,,,,high,,,,,,,,,high,,,,,,high,,,10mA will be sourced by S4600 through SW configuration
+,219,I_S_CONV I_S_LCPS,,,,,"Clutch Switch Launch clutch pressure switch
+(SW to GND wetting current 20 mA)
+",Digital Input,,Mode selection SW3: Switch to GND  ,,,,249 254,V_V_BAT_R2 G_G_BAT2,,,,,,,,,,,,,,,,,0.8,,,,Configure S4600(L9966CB) chip ECU pin 219 for switch to GND operation with Pull up current of 10mA 20mA (In SW it is configued as switch to UBAT GND),,,low,,,,,,low,,,,,,,,,low,,,,,,low,,,10mA will be sourced by S4600 through SW configuration
+,234,I_S_KILL I_S_BRKRSW,,,,,"Kill switch 
+(18mA @13.5V due to R4628:750 Ohms 
+switch to UBAT)
+Redundant brake switch (switch to UBAT)",Digital Input,,Mode selection SW1: Switch to UBAT,,,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,,0.8,,,,Configure S4600(L9966CB) chip ECU pin 234 for switch to UBAT operation with Pull down current of 20mA,,,high,,,,,,high,,,,,,,,,high,,,,,,high,,,
+TableRow,201,I_F_CRSPOS,,,,,Crank shaft sensor  Pos / Hall Open collector ,Frequency Input,,"Feed the frequecny input, Refer A0 column CY30",,,,,,,,,,,,,,,,,,,,,,0.8,202,,,CY30,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,202,I_F_CRSNEG,,,,,Crank shaft sensor Neg / HALL senor GND,Frequency Input,,"Feed the frequecny input, Refer A0 column CY30",,,,,,,,,,,,,,,,,,,,,,0.8,201,,,CY30,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,230,B_D_CANH1,,,,,Application CAN,Interfaces,,CAN-H --> SUB-D7 Prog/FLIP,,,,,,,,,,,,,,,,,,,,,,0.8,231,,,Bus loading should be 90%,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,231,B_D_CANL1,,,,,Application CAN,Interfaces,,CAN-L --> SUB-D2 Prog/FLIP ,,,,,,,,,,,,,,,,,,,,,,0.8,230,,,Bus loading should be 90%,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,144,B_D_CANH2,,,,,Application CAN,Interfaces,,Internal loop  (Baud rate 500kbps),,,,146,,,,,,,,,,,,,,,,,,0.8,143,,,SW to be developed for internal bus loading of 90%,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,143,B_D_CANL2,,,,,Application CAN,Interfaces,,Internal loop  (Baud rate 500kbps),,,,145,,,,,,,,,,,,,,,,,,0.8,144,,,SW to be developed for internal bus loading of 90%,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,146,B_D_CANH3 ,,,,,CAN-H3,Interfaces,,Internal loop  (Baud rate 500kbps),,,,,,,,,,,,,,,,,,,,,,0.8,145,,,SW to be developed for internal bus loading of 90%,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,145,B_D_CANL3 ,,,,,CAN-L3,Interfaces,,Internal loop  (Baud rate 500kbps),,,,,,,,,,,,,,,,,,,,,,0.8,146,,,SW to be developed for internal bus loading of 90%,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,137,B_D_LIN ,,,,,Application LIN,Interfaces,,Second DUT as partner DUT,,,,,,,,,,,,,,,,,,,,,,0.8,,,,"LIN: Master and Slave concept ( 3 ECUs master,3 ECUs slave)",,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,238,G_R_LSF2,,,,,Sensor ground (LSF2) - Reserved Lambda sensor 2 Ground,SensorGround,,,,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,127,G_R_RES02,,,,,Sensor ground,SensorGround,,"I_T_VSS,I_A_KS1B,I_A_KS2B,",,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,128,G_R_RES03,,,,,Sensor ground -Lean Angle Sensor ground,SensorGround,,,,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,135,G_R_RES04,,,,,Sensor Ground,SensorGround,,"I_A_GPS1,I_A_SSW1,I_A_MAT",,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,153,G_R_RES05,,,,,Sensor Ground,SensorGround,,O_T_RES01,,,,,,,,,,,,,,,,,,,,,,1.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,237,G_R_LSF1,,,,,Sensor ground (LSF1) -Lambda sensor 1 Ground,SensorGround,,,,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,226,G_R_TPS,,,,,Sensor Ground - Throttle position sensor ground,SensorGround,,,,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,225,G_R_APP2,,,,,Sensor ground - accelerator pedal position sensor 2 ground,SensorGround,,,,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,116,G_R_RES01,,,,,"Sensor ground - CAM, CTS and TMAP sensor ground",SensorGround,," I_A_ENGTS,I_A_OLS ",,220,,Virtual Pin,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,239,G_R_APP1,,,,,Sensor ground - accelerator pedal position sensor 1 ground,SensorGround,,,,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,228,O_R_LSVG2 G_R_LSF4,,,,,Nernst voltage Reserved Lambda sensor 4 Ground ,Sensor Ground,,"LSU5.2 OSIC  IPE, LSF4 GND ",,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,240,"I_A_LSCP2 G_R_LSF3
+",,,,,Messe Reserved Lambda sensor 4 Ground ,Sensor Ground,,"LSU5.2 OSIC  APE, LSF3 GND ",,,,,,,,,,,,,,,,,,,,,,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,251,G_G_BAT1,,,,,PowerGround 1,PowerGround,,"I_T_CAMIN2,I_T_CAMEX2,I_T_CAMEX1 G_G_OPS",,,,GND,,,,,,,,,,,,,,,,,,1.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,254,G_G_BAT2,,,,,PowerGround 2,PowerGround,,"I_T_VSS,I_S_RES03,I_S_RES01 G_G_LCPS",,,,GND,,,,,,,,,,,,,,,,,,1.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,153,G_G_BAT3,,,,,PowerGround 3,PowerGround,,"I_S_RES02,I_S_KILL",,,,GND,,,,,,,,,,,,,,,,,,1.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,243,O_P_IV1,,,,,Injector Cyl 1,Digital-/PowerOutput,,EV14,13,12,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,2.2A,0.8,,,,,7,2,,,,,50,8,,,,,75,12,,,,,125,8,,,,,,,
+TableRow,213,O_P_IV2,,,,,Injector Cyl 2,Digital-/PowerOutput,,EV14,13,12,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,2.2A,0.8,,,,,7,2,,,,,50,8,,,,,75,12,,,,,125,8,,,,,,,
+TableRow,154,O_P_IV3,,,,,Injector Cyl 3,Digital-/PowerOutput,,EV14,13,12,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,2.2A,1.5,,,,,7,2,,,,,50,8,,,,,75,12,,,,,125,8,,,,,,,
+TableRow,149,O_P_IV4,,,,,Injector Cyl 4 Reserved Injector Cyl 4,Digital-/PowerOutput,,EV14,13,12,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,2.2A,1.5,,,,,7,2,,,,,50,8,,,,,75,12,,,,,125,8,,,,,,,
+,155,O_T_ CVVTI1,,,,,CAM Variable Valve Timing Intake 1 Driver,Digital-/PowerOutput,,CAM Variable Valve Timing Intake 1 Driver,15,7.5,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,3A,1.5,,,,,250,50,,,,,250,50,,,,,250,50,,,,,250,50,,,,,,,
+,125,O_T_CVVTE1,,,,,CAM Variable Valve Timing Exhaust 1 Driver,Digital-/PowerOutput,,CAM Variable Valve Timing Exhaust 1 Driver,15,7.5,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,3A,0.8,,,,,250,50,,,,,250,50,,,,,250,50,,,,,250,50,,,,,,,
+TableRow,216,O_T_CVVTI2,Inj7  / CAM Variable Valve Timing Intake 2 Driver,,,,CAM Variable Valve Timing Intake 2 Driver,Digital-/PowerOutput,,CAM Variable Valve Timing Intake 2 Driver,15,7.5,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,2.2A,0.8,,,,,250,50,,,,,250,50,,,,,250,50,,,,,250,50,,,,,,,
+TableRow,206,O_T_CVVVE2,Inj8 / CAM Variable Valve Timing Exhaust 2 Driver,,,,CAM Variable Valve Timing Exhaust 2 Driver,Digital-/PowerOutput,,CAM Variable Valve Timing Exhaust 2 Driver,15,7.5,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,2.2A,0.8,,,,,250,50,,,,,250,50,,,,,250,50,,,,,250,50,,,,,,,
+TableRow,148,O_S_FPRL,,,,,Fuel Pump Relay Coil Driver,Digital-/PowerOutput,,Fuel Pump Relay ,150,68,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,0.6A,0.8,,,,,,,low,,,,,,low,,,,,,low,,,,,,low,,,,,,
+TableRow,220,O_T_CPURGEV,,,,,Canister Purge Solenoid Driver,Digital-/PowerOutput,,Canister Purge valve,24,16,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,1.5A,0.8,,,,,10,30,,,,,10,30,,,,,10,30,,,,,10,30,,,,,,,
+TableRow,207,O_S_STRL,,,,,Starter Relay Coil Driver,Digital-/PowerOutput,,Starter Relay,150,68,,136 249,O_S_STRH V_V_BAT_R2,,,,,,,,,,,,,,,,0.6A,0.8,,,,,,,low,,,,,,,,,,,,,,,,,,,,,,,,
+,150,O_T_FPRH,,,,,Direct driven fuel pump,Digital-/PowerOutput,,Direct driven fuel pump,1,2,,251,G_G_BAT1,,,,,,,,,,,,,,,,5A,1.5,,,,,2000,30,,,,,2000,50,,,,,2000,70,,,,,2000,80,,,,,,,
+TableRow,209,O_S_LSH1,,,,,LSF1 Heater ,Digital-/PowerOutput,,Lambda Heater 1,0,7,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,4A,0.8,,,,,10,70,,,,,10,50,,,,,10,50,,,,,10,50,,,,,,,
+TableRow,208,O_S_LSH2,,,,,LSF2 Heater,Digital-/PowerOutput,,Lambda Heater 2,0,7,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,4A,0.8,,,,,10,70,,,,,10,50,,,,,10,50,,,,,10,50,,,,,,,
+TableRow,215,O_S_LSH3,,,,,LSF3 Heater /LSU1 heater,Digital-/PowerOutput,,Lambda Heater 3,0,7,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,4A,0.8,,,,,10,70,,,,,10,50,,,,,10,50,,,,,10,50,,,,,,,
+TableRow,214,O_S_LSH4,,,,,LSF4 Heater / LSU2 heater,Digital-/PowerOutput,,Lambda Heater 4,0,7,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,4A,0.8,,,,,10,70,,,,,10,50,,,,,10,50,,,,,10,50,,,,,,,
+,253,O_P_IGN1,,,,,Ignition Cyl 1,Digital-/PowerOutput,,Ignition coil,1.6,0.65,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,3A,1.5,,,,,7,2,,,,,50,8,,,,,75,12,,,,,125,8,,,,,,,
+TableRow,252,O_P_IGN2,,,,,Ignition Cyl 2,Digital-/PowerOutput,,Ignition coil,1.6,0.65,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,3A,1.5,,,,,7,2,,,,,50,8,,,,,75,12,,,,,125,8,,,,,,,
+TableRow,152,O_P_IGN3,,,,,Ignition Cyl 3,Digital-/PowerOutput,,Ignition coil,1.6,0.65,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,3A,1.5,,,,,7,2,,,,,50,8,,,,,75,12,,,,,125,8,,,,,,,
+TableRow,151,O_P_IGN4,,,,,Ignition Cyl 4,Digital-/PowerOutput,,Ignition coil,1.6,0.65,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,3A,1.5,,,,,7,2,,,,,50,8,,,,,75,12,,,,,125,8,,,,,,,
+TableRow,124,O_S_RLY4,,,,,AC Compression clutch,Digital-/PowerOutput,,AC Compression clutch (After run pin),,,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,0.6A,0.8,,,,,,,high,,,,,,high,,,,,,high,,,,,,high,,,,,,
+.,112,O_S_RLY5,,,,,"Accessory Water Pump  
+",Digital-/PowerOutput,,Virtual 5V PWM Generator for  PWM inputs 10kHz. Feed the frequency signal as per column A0 ,,220,,210,O_V_TPS1,,,,,,,,,,,,,,,,0.6A,0.8,,,,Configure the Output stage LS2 of CY329 for generating frequency of 10kHz and 40% Duty cycle,10000,40,,,,,10000,40,,,,,10000,40,,,,,10000,40,,,,,,,
+,110,O_S_RLY6,,,,,Reserved Switch Output,Digital-/PowerOutput,,Virtual 5V PWM Generator for  PWM inputs 1kHz. Feed the frequency signal as per column A0 ,,220,,210,O_V_TPS1,,,,,,,,,,,,,,,,0.6A,0.8,,,,Configure the Output stage LS3 of CY329 for generating frequency of 1kHz and 50% Duty cycle,1000,50,,,,,1000,50,,,,,1000,50,,,,,1000,50,,,,,,,
+,242,O_T_SAIV,,,,, Secondary air cut off valve,Digital-/PowerOutput,,Secondary air cut off valve ,121,18.1,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,1.5A,0.8,,,,,100,50,,,,,100,50,,,,,100,50,,,,,100,50,,,,,,,
+TableRow,111,O_T_WGV,,,,,Wastegate Control Driver,Digital-/PowerOutput,,Wastegate driver,60,23,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,0.6A,0.8,,,,Configure the Output stage LS7 of CY329 for generating frequency of 1kHz and 50% Duty cycle,100,20,,,,,100,20,,,,,100,20,,,,,100,20,,,,,,,
+TableRow,136,O_S_STRH,,,,,Starter Relay HSD,Digital-/PowerOutput,,Starter Relay HSD,150,68,,207,O_S_STRL,,,,,,,,,,,,,,,,0.6A,0.8,,,,,,,high,,,,,,high,,,,,,high,,,,,,high,,,,,,
+,222,O_S_MRLY,,,,,Main Relay,Digital-/PowerOutput,,Main Relay,,,,249,V_V_BAT_R2,,,,,,,,,,,,,,,,0.6A,0.8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TableRow,255,O_T_ETCPOS1,,,,,Electronic Throttle Control Positive,Digital-/PowerOutput,,Electronic Throttle Control,1.1,1.6,,256,O_T_ETCNEG1,,,,,,,,,,,,,,,,3.5A,1.5,256,,,,2000,10,,,,,2000,20,,,,,2000,30,,,,,2000,20,,,,,,,
+TableRow,256,O_T_ETCNEG1,,,,,Electronic Throttle Control Negative,Digital-/PowerOutput,,Electronic Throttle Control,,,,255,O_T_ETCPOS1,,,,,,,,,,,,,,,,3.5A,1.5,255,,,,,,low,,,,,,low,,,,,,low,,,,,,low,,,,,,
+TableRow,212,O_T_ETCPOS2,,,,,Electronic Throttle Control Positive,Digital-/PowerOutput,,Electronic Throttle Control,1.1,1.6,,224,O_T_ETCNEG2,,,,,,,,,,,,,,,,3.5A,1.5,224,,,,2000,10,,,,,2000,20,,,,,2000,30,,,,,2000,20,,,,,,,
+TableRow,224,O_T_ETCNEG2,,,,,Electronic Throttle Control Negative,Digital-/PowerOutput,,Electronic Throttle Control,,,,212,O_T_ETCPOS2,,,,,,,,,,,,,,,,3.5A,1.5,212,,,,,,low,,,,,,low,,,,,,low,,,,,,low,,,,,,
