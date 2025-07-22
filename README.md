@@ -7,7 +7,7 @@ Remove special characters and invalid values (N/A, NA, <, >, =, etc.).
 Save the cleaned file with the same format.
 
 Push everything to a GitHub repository.
-
+-------------------------------------------------------------------------------------------
 Folder Structure:
 css
 Copy
@@ -19,7 +19,7 @@ excel-cleaner/
 ├── Main data.xlsx       ← (Place original Excel here)
 ├── .gitignore
 └── README.md
-
+---------------------------------------------------------------------------------------------
 main.py – Python Code:
 python
 Copy
@@ -52,14 +52,14 @@ def main():
 
 if __name__ == "__main__":
     main()
-
+-----------------------------------------------------------------------------------------------------------------
     requirements.txt:
 nginx
 Copy
 Edit
 pandas
 openpyxl
-
+------------------------------------------------------------------------------------------------------------------
 .gitignore:
 markdown
 Copy
@@ -68,29 +68,30 @@ __pycache__/
 *.pyc
 *.xlsx
 
-
+--------------------------------------------------------------------------------------------------------------------
 README.md:
 markdown
 Copy
 Edit
+--------------------------------------------------------------------------------------------------------------------
 #  Excel Cleaner
 
 This Python script removes special characters and invalid values (like `N/A`, `<`, `>`, `=`) from an Excel file while preserving its original structure and formatting.
-
+--------------------------------------------------------------------------------------------------------------------
 ## Features
 - Cleans `Sheet1` of the Excel file.
 - Removes:
   - Special characters like `<`, `>`, `=`, etc.
   - Strings like `N/A` or `NA`
 - Saves the cleaned Excel file using `openpyxl`.
-
+------------------------------------------------------------------------------------------------------------------------
 ##  Installation
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/your-username/excel-cleaner.git
 cd excel-cleaner
-
+-----------------------------------------------------------------------------------------------------------------------
 
 Install dependencies:
 
@@ -100,14 +101,14 @@ Edit
 pip install -r requirements.txt
 Add your original Excel file:
 Place Main data.xlsx in the root of the folder.
-
+------------------------------------------------------------------------------------------------------------------------
 Usage
 bash
 Copy
 Edit
 python main.py
 
-
+--------------------------------------------------------------------------------------------------------------------------
 ### 🔄 GitHub Push Instructions:
 
 ```bash
